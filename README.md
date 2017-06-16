@@ -91,5 +91,5 @@ Link  - need to figure out how to link google sheet here
    
    There is a secondary Dash spreadsheet which links latest data onto a smaller sheet which can be viewed on a cell phone
    
-Link - need to figure out how to link google sheet here   
+Link - need to figure out how to link google sheet here  
   
