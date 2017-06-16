@@ -84,6 +84,9 @@ This uses a raspberry Pi to read temeperature and humidity using a DHT22 sensor 
    4. db - the data read from the DHT22 and HX711.  This can get very large
    5.Batches - a sheet to record information about curing batches
    
+   Scripts:  Init button calls ClearCCC which deletes the database data
+             Load Cell buttons reset the starting weight for a new batch
+   
    https://docs.google.com/spreadsheets/d/1RDl6c0PCc1N5fu7AyHzHCBHRwpOT-CSu9wPups7etVM/pubhtml
    
    
