@@ -32,7 +32,8 @@ This uses a raspberry Pi to read temeperature and humidity using a DHT22 sensor 
   
   Files:
  
-  ./etc/rc.local
+  /etc/rc.local
+  
     1. Waits for wireless lan to initiate
     2. sends email saying rebooted
     3. starts StartPorkPi.sh shell script using screen to allow remote login to headless application
