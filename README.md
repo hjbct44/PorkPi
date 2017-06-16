@@ -37,7 +37,7 @@ This uses a raspberry Pi to read temeperature and humidity using a DHT22 sensor 
     2. sends email saying rebooted
     3. starts StartPorkPi.sh shell script using screen to allow remote login to headless application
     4. starts StartWeighing.sh shell script using screen to allow remote login to headless application
-   
+    
  ./RebootMailer
    1. send email saying rebooted
    
@@ -87,9 +87,9 @@ This uses a raspberry Pi to read temeperature and humidity using a DHT22 sensor 
    Scripts:  Init button calls ClearCCC which deletes the database data
              Load Cell buttons reset the starting weight for a new batch
    
-Link <need to figure out how to link google sheet here>   
+Link  - need to figure out how to link google sheet here  
    
    There is a secondary Dash spreadsheet which links latest data onto a smaller sheet which can be viewed on a cell phone
    
-Link <need to figure out how to link google sheet here>     
+Link - need to figure out how to link google sheet here   
   
