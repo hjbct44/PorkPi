@@ -1,0 +1,6 @@
+#!/bin/sh -e
+/home/pi/PorkPi/WaitForWLAN.sh
+/home/pi/PorkPi/Reboot_Mailer.sh &
+screen -dm -S PorkPi sh  ./home/pi/PorkPi/StartPorkPi.sh &
+screen -dm -S Weighing sh  ./home/pi/PorkPi/StartWeighing.sh &
+
