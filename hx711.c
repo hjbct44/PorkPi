@@ -2,7 +2,7 @@
  gurov was here, use this code, or don't, whatever, I don't care. If you see a giant bug with a billion legs, please let me know so it can be squashed
 gcc -o hx711wp hx711wp.c -lwiringPi
 
-HB -some cleanup, comments, unused variables etc.  Changed priority to wiringpi and init type to gpio
+HJBCT44 -some cleanup, comments, unused variables etc.  Changed to wiringpi and init type to gpio
 */
 
 #include <stdint.h>
