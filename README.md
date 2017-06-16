@@ -3,21 +3,21 @@ Raspberry Pi control for meat curing chamber
 
 This uses a raspberry Pi to read temeperature and humidity using a DHT22 sensor and controls a fridge with the following controls:
 
-  Temperature Too High - Turn fridge on
-  Temperature Too Low - Turn fridge off + turn on heater
-  
-  Humidity Too High - turn on Fridge + Turn on heater if needed
-  Humidity Too Low - turn off Fridge + Turn on humidifyer
-  
-  Circulate Air - circulate the air insude fridge
-  
-  Air_Pump - inject fresh air from outside fridge
-  
-  Weight 1 - read from load cell_1 using load cell connected to HX711 A-D converter 
-  Weight 2 - read from load cell_2
-  Weight 3 - read from load cell_3
-  Weight 4 - read from load cell_4
-  
+          Temperature Too High - Turn fridge on
+          Temperature Too Low - Turn fridge off + turn on heater
+
+          Humidity Too High - turn on Fridge + Turn on heater if needed
+          Humidity Too Low - turn off Fridge + Turn on humidifyer
+
+          Circulate Air - circulate the air insude fridge
+
+          Air_Pump - inject fresh air from outside fridge
+
+          Weight 1 - read from load cell_1 using load cell connected to HX711 A-D converter 
+          Weight 2 - read from load cell_2
+          Weight 3 - read from load cell_3
+          Weight 4 - read from load cell_4
+
   
   The parameters to control the fridge are held in a google sheet (see GSPREAD below).
   
@@ -35,8 +35,8 @@ This uses a raspberry Pi to read temeperature and humidity using a DHT22 sensor 
   /etc/rc.local
   1. Waits for wireless lan to initiate
   2. sends email saying rebooted
-  3. starts StartPorkPi.sh shell script using screen to allow remote login to headless application
-  4. starts StartWeighing.sh shell script using screen to allow remote login to headless application
+  3. starts StartPorkPi.sh shell script using screen (https://www.gnu.org/software/screen/manual/screen.html#Overview) to allow remote login to headless application
+  4. starts StartWeighing.sh shell script using screen (https://www.gnu.org/software/screen/manual/screen.html#Overview) to allow remote login to headless application
    
    
  ./RebootMailer
