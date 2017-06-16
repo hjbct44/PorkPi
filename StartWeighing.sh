@@ -13,7 +13,6 @@ cd /home/pi/PorkPi
 touch LoadCell_LockFile
 
 sudo ./hx711 11 9  -145500 -961118 > LoadCell_1
-#sudo ./hx711 11 9  -145668 -961118 > LoadCell_1
 sleep 10s
 sudo ./hx711 25 24 -50674 -1065180 > LoadCell_2
 sleep 10s
