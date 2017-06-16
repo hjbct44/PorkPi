@@ -37,12 +37,15 @@ This uses a raspberry Pi to read temeperature and humidity using a DHT22 sensor 
   2. sends email saying rebooted
   3. starts StartPorkPi.sh shell script using screen to allow remote login to headless application
   4. starts StartWeighing.sh shell script using screen to allow remote login to headless application
-    
+   
+   
  ./RebootMailer
   1. send email saying rebooted
    
+   
  ./WaitForLan.sh
    1. loop until get successfulping from WLAN
+   
    
  ./PorkPi.sh
    1. start hardware watchdog
@@ -51,18 +54,22 @@ This uses a raspberry Pi to read temeperature and humidity using a DHT22 sensor 
    4. execute python code PorkPi.py
    5. if crashed, send email saying crashed and restart PorkPi.py
    
+   
  ./PorkPiCheckDog.sh
    1. touch file
    2. check file has been touched by PorkPi.py recently
    3. if file has not beentouched recently, reboot
    4. execute PorkPiCheckEmail.py to check to see if recieved email for reboot or restart
    
+   
  ./PorkPiCheckEmail.py
    1. If recieved email from specific account with Subject = reboot, then reboot
    2. If recieved email from specific account with Subject = shutdown, then shutdown PorkPi
    
+   
  ./StartWeighing.sh
    1. execute HX711 with parameters to read weight of load cell and write reults to file o be picked up by PorkPi.py
+   
    
  ./PorkPi
    Main python code for PorkPi
