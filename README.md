@@ -33,14 +33,13 @@ This uses a raspberry Pi to read temeperature and humidity using a DHT22 sensor 
   Files:
  
   /etc/rc.local
-  
-    1. Waits for wireless lan to initiate
-    2. sends email saying rebooted
-    3. starts StartPorkPi.sh shell script using screen to allow remote login to headless application
-    4. starts StartWeighing.sh shell script using screen to allow remote login to headless application
+  1. Waits for wireless lan to initiate
+  2. sends email saying rebooted
+  3. starts StartPorkPi.sh shell script using screen to allow remote login to headless application
+  4. starts StartWeighing.sh shell script using screen to allow remote login to headless application
     
  ./RebootMailer
-   1. send email saying rebooted
+  1. send email saying rebooted
    
  ./WaitForLan.sh
    1. loop until get successfulping from WLAN
