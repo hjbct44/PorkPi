@@ -78,11 +78,11 @@ This uses a raspberry Pi to read temeperature and humidity using a DHT22 sensor 
    Setting up the credentials and permissions is a little tricky but persevere.
    
    The google workbook has 5 sheets:
-   <Dashboard> contains the numerical and graphical status of the curing process, Temperatures, Humidity, Weights etc.
-   <Params> contains the input parameters to control the PorkPi 
-   <Schedule> contains Temperature and Humidity settings on a daily basis so the chamber can be automatically controlled for a curingperiod
-   <db> the data read from the DHT22 and HX711.  This can get very large
-   <Batches> a sheet to record information about curing batches
+   Dashboard - contains the numerical and graphical status of the curing process, Temperatures, Humidity, Weights etc.
+   Params - contains the input parameters to control the PorkPi 
+   Schedule - contains Temperature and Humidity settings on a daily basis so the chamber can be automatically controlled for a curingperiod
+   db - the data read from the DHT22 and HX711.  This can get very large
+   Batches - a sheet to record information about curing batches
    
    
             
