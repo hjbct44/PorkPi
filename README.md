@@ -84,5 +84,11 @@ This uses a raspberry Pi to read temeperature and humidity using a DHT22 sensor 
    4. db - the data read from the DHT22 and HX711.  This can get very large
    5.Batches - a sheet to record information about curing batches
    
+   https://docs.google.com/spreadsheets/d/1RDl6c0PCc1N5fu7AyHzHCBHRwpOT-CSu9wPups7etVM/pubhtml
+   
+   
    There is a secondary Dash spreadsheet which links latest data onto a smaller sheet which can be viewed on a cell phone
-            
+   
+  https://docs.google.com/spreadsheets/d/1xMGc0iQPXL9VNvSyFx-PsZVHFLCx0u7VIm3qBB5bHxI/pubhtml
+  
+  
