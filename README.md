@@ -9,7 +9,7 @@ This uses a raspberry Pi to read temeperature and humidity using a DHT22 sensor 
           Humidity Too High - turn on Fridge + Turn on heater if needed
           Humidity Too Low - turn off Fridge + Turn on humidifyer
 
-          Circulate Air - circulate the air insude fridge
+          Circulate Air - circulate the air inside fridge
 
           Air_Pump - inject fresh air from outside fridge
 
@@ -49,7 +49,7 @@ This uses a raspberry Pi to read temeperature and humidity using a DHT22 sensor 
    
  ./PorkPi.sh
    1. start hardware watchdog
-   2. start software watchdog (PorkPiCheck
+   2. start software watchdog (PorkPiCheckDog.sh)
    3. send email saying Porkpi started
    4. execute python code PorkPi.py
    5. if crashed, send email saying crashed and restart PorkPi.py
@@ -59,16 +59,16 @@ This uses a raspberry Pi to read temeperature and humidity using a DHT22 sensor 
    1. touch file
    2. check file has been touched by PorkPi.py recently
    3. if file has not beentouched recently, reboot
-   4. execute PorkPiCheckEmail.py to check to see if recieved email for reboot or restart
+   4. execute PorkPiCheckEmail.py to check to see if received email for reboot or restart
    
    
  ./PorkPiCheckEmail.py
-   1. If recieved email from specific account with Subject = reboot, then reboot
-   2. If recieved email from specific account with Subject = shutdown, then shutdown PorkPi
+   1. If received email from specific account with Subject = reboot, then reboot
+   2. If received email from specific account with Subject = shutdown, then shutdown PorkPi
    
    
  ./StartWeighing.sh
-   1. execute HX711 with parameters to read weight of load cell and write reults to file o be picked up by PorkPi.py
+   1. execute HX711 with parameters to read weight of load cell and write reults to file to be picked up by PorkPi.py
    
    
  ./PorkPi
@@ -88,7 +88,7 @@ This uses a raspberry Pi to read temeperature and humidity using a DHT22 sensor 
    1. Dashboard - contains the numerical and graphical status of the curing process, Temperatures, Humidity, Weights etc.
    2. Params - contains the input parameters to control the PorkPi 
    3. Schedule - contains Temperature and Humidity settings on a daily basis so the chamber can be automatically controlled for a curingperiod
-   4. db - the data read from the DHT22 and HX711.  This can get very large
+   4. db - the data read from the DHT22 and HX711 as well as status of devices.  This can get very large
    5.Batches - a sheet to record information about curing batches
    
    Scripts:  Init button calls ClearCCC which deletes the database data
