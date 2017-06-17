@@ -569,13 +569,6 @@ air_pump_status = OFF
 dash, database, params, credentials = login_open_sheet(GDOCS_OAUTH_JSON, GDOCS_SPREADSHEET_NAME)
 last_login_time = time.time()
 
-print("About to Compress")
-#CompressDb(database)
-
-
-
-
-
 
 #Read Initial Data
 initialise,refreshsettings, chamber_setpoint_temp, chamber_setpoint_rh, last_row_written, \
